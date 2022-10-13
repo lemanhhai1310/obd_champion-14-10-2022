@@ -1,0 +1,24 @@
+body{
+  font-family: $font-Dosis-Regular;
+  background: #{$primary-color};
+}
+#app{
+  background: #F5F5F8;
+  .isHome &{
+    padding-bottom: 56px;
+  }
+  .uk-offcanvas-page &{
+    padding-bottom: 0 !important;
+  }
+}
+.app{
+  &__container{
+    //max-width: 414px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    .uk-offcanvas-page &{
+      border-radius: 20px;
+    }
+  }
+}
