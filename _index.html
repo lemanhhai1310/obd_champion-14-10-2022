@@ -1,10 +1,218 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <meta http-equiv="REFRESH" content="1800"/>
+    <title>Trang chủ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <!--CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.10/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="style.css?v=1665711463">
 
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.10/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.10/dist/js/uikit-icons.min.js"></script>
+    <script src="js/app.js?v=1665711463"></script>
+</head>
+<body class="isHome">
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+     attribution=setup_tool
+     page_id="2428809380682169"
+     logged_in_greeting="Bạn cần cắt HTML/CSS? Hãy chat ngay với chúng tôi"
+     logged_out_greeting="Bạn cần cắt HTML/CSS? Hãy chat ngay với chúng tôi">
+</div>
+<script>
+    defer(function() {
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml            : true,
+                version          : 'v5.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    }, 5000);
+</script><div id="offcanvas-reveal" class="offcanvas" uk-offcanvas="mode: reveal; overlay: false">
+    <div class="uk-offcanvas-bar offcanvas__bar uk-flex uk-flex-column">
+        <div class="uk-flex-auto">
+            <ul class="uk-nav-default offcanvas__nav" uk-nav>
+                <li><a href="#"><span class="uk-margin-small-right offcanvas__nav__icon offcanvas__nav__icon--profile" uk-icon="icon: user"></span> Profile</a></li>
+                <li><a href="#"><span class="uk-margin-small-right offcanvas__nav__icon offcanvas__nav__icon--bxh" uk-icon="icon: table"></span> Bảng xếp hạng</a></li>
+                <li><a href="#"><span class="uk-margin-small-right offcanvas__nav__icon offcanvas__nav__icon--dautruong" uk-icon="icon: thumbnails"></span> Đấu trường</a></li>
+                <li><a href="#"><span class="uk-margin-small-right offcanvas__nav__icon offcanvas__nav__icon--giaithuong" uk-icon="icon: bell"></span> Giải thưởng</a></li>
+                <li><a href="#"><span class="uk-margin-small-right offcanvas__nav__icon offcanvas__nav__icon--thele" uk-icon="icon: file-text"></span> Thể lệ</a></li>
+                <li><a href="#"><span class="uk-margin-small-right offcanvas__nav__icon offcanvas__nav__icon--thele" uk-icon="icon: file-text"></span> Cách đổi huy chương</a></li>
+            </ul>
+        </div>
+        <div>
+            <a href="" class="uk-link-toggle uk-offcanvas-close offcanvas__back">Trang chủ <span class="uk-margin-small-left offcanvas__nav__icon offcanvas__nav__icon--back" uk-icon="icon: file-text"></span></a>
+        </div>
+
+    </div>
+</div>
+<!--app-->
+<div id="app" class="app uk-offcanvas-content uk-position-relative">
+    <!--app__container-->
+    <div class="app__container" uk-height-viewport="expand: true">
+        <nav class="uk-navbar-container uk-navbar-transparent uk-position-top" uk-navbar>
+            <div class="uk-navbar-left">
+                <a uk-toggle="target: #offcanvas-reveal" class="uk-navbar-toggle home__menu" uk-navbar-toggle-icon href="#" aria-label="Open Menu"></a>
+            </div>
+        </nav>
+        <div class="home__bxh uk-section-small uk-background-norepeat uk-background-center-center uk-background-cover" data-src="images/Rectangle93.png" uk-img>
+            <div class="uk-container uk-text-center">
+                <div class="uk-cover-container uk-display-inline-block">
+                    <img src="images/image15.png" alt="" uk-cover="">
+                    <canvas width="251" height="149"></canvas>
+                    <div class="uk-padding-small uk-position-cover">
+                        <div class="uk-position-center home__bxh__txt">
+                            Bảng xếp hạng <br>
+                            <span>OBD Champion</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home__content uk-section-xsmall uk-padding-remove-bottom" uk-height-viewport="expand: true">
+            <div class="uk-container">
+                <div class="item__24">
+                    <form class="home__content__search uk-search uk-search-default uk-width-1-1">
+                        <span class="home__content__search__icon" uk-search-icon></span>
+                        <input class="home__content__search__input uk-search-input uk-form-large" type="search" placeholder="Nhập tên hệ thống">
+                    </form>
+                </div>
+                <div class="item__24">
+                    <div class="home__boxSpace uk-overflow-auto home__overflow__scrollbar">
+                        <ul class="home__content__tab uk-subnav uk-flex-nowrap" uk-switcher="connect: .switcher-container">
+                            <li><a href="#">Bảng xếp hạng</a></li>
+                            <li><a href="#">Đấu trường</a></li>
+                            <li><a href="#">Giải thưởng</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="">
+                    <ul class="uk-switcher switcher-container">
+                        <li>
+                            <div class="uk-overflow-auto home__boxSpace home__overflow__scrollbar home__overflow__boxshadow uk-section-small">
+                                <div class="uk-child-width-auto uk-grid-match uk-grid-12 uk-flex-nowrap home__overflow__grid" uk-grid>
+                                    <div class="home__overflow__column">
+                                        <div class="uk-card uk-card-default home__content__card">
+                                            <div class="item__24 home__content__card__avartar uk-cover-container uk-border-circle">
+                                                <img src="images/image14.png" alt="" uk-cover="">
+                                                <canvas width="200" height="200"></canvas>
+                                            </div>
+                                            <div class="item__24">
+                                                <div class="item__12 home__content__card__title">Đấu trường Sói</div>
+                                                <div class="item__12 home__content__card__txt">400 chiến binh</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="home__overflow__column">
+                                        <div class="uk-card uk-card-default home__content__card">
+                                            <div class="item__24 home__content__card__avartar uk-cover-container uk-border-circle">
+                                                <img src="images/image141.png" alt="" uk-cover="">
+                                                <canvas width="200" height="200"></canvas>
+                                            </div>
+                                            <div class="item__24">
+                                                <div class="item__12 home__content__card__title">Chiến binh GTA V</div>
+                                                <div class="item__12 home__content__card__txt">400 chiến binh</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="home__overflow__column">
+                                        <div class="uk-card uk-card-default home__content__card">
+                                            <div class="item__24 home__content__card__avartar uk-cover-container uk-border-circle">
+                                                <img src="images/lemanhhai_anhthe.jpg" alt="" uk-cover="">
+                                                <canvas width="200" height="200"></canvas>
+                                            </div>
+                                            <div class="item__24">
+                                                <div class="item__12 home__content__card__title">Đấu trường Sói</div>
+                                                <div class="item__12 home__content__card__txt">400 chiến binh</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="home__overflow__column">
+                                        <div class="uk-card uk-card-default home__content__card">
+                                            <div class="item__24 home__content__card__avartar uk-cover-container uk-border-circle">
+                                                <img src="images/image14.png" alt="" uk-cover="">
+                                                <canvas width="200" height="200"></canvas>
+                                            </div>
+                                            <div class="item__24">
+                                                <div class="item__12 home__content__card__title">Chiến binh GTA V</div>
+                                                <div class="item__12 home__content__card__txt">400 chiến binh</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>Hello again!</li>
+                        <li>Bazinga!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/app__container-->
+    <nav class="navigation__navbarMenu uk-position-bottom uk-position-fixed uk-navbar uk-navbar-container" uk-navbar>
+        <div class="uk-navbar-left uk-flex-1">
+            <ul class="uk-navbar-nav uk-flex-1 uk-child-width-expand">
+                <li class="uk-active">
+                    <a href="">
+                        <div>
+                            <span class="navigation__navbarMenu__icon navigation__navbarMenu__icon--home"></span>
+                            <div class="uk-navbar-subtitle navigation__navbarMenu__subtitle">Trang chủ</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="">
+                        <div>
+                            <span class="navigation__navbarMenu__icon navigation__navbarMenu__icon--bxh"></span>
+                            <div class="uk-navbar-subtitle navigation__navbarMenu__subtitle">BXH</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="">
+                        <div>
+                            <span class="navigation__navbarMenu__icon navigation__navbarMenu__icon--dautruong"></span>
+                            <div class="uk-navbar-subtitle navigation__navbarMenu__subtitle">Đấu trường</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="">
+                        <div>
+                            <span class="navigation__navbarMenu__icon navigation__navbarMenu__icon--thele"></span>
+                            <div class="uk-navbar-subtitle navigation__navbarMenu__subtitle">Thể lệ</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="">
+                        <div>
+                            <span class="navigation__navbarMenu__icon navigation__navbarMenu__icon--taikhoan"></span>
+                            <div class="uk-navbar-subtitle navigation__navbarMenu__subtitle">Tài khoản</div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<!--/app-->
 </body>
 </html>

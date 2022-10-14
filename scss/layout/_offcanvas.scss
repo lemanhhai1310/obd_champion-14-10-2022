@@ -17,7 +17,7 @@ $x:77px;
   }
   &__back{
     position: inherit;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     font-size: 16px;
     font-family: $font-Dosis-SemiBold;
     display: flex;
@@ -106,5 +106,10 @@ body{
     border-radius: 20px;
     position: relative;
     left: 50px;
+  }
+  &__container{
+    .uk-offcanvas-page &{
+      max-height: calc(100vh - #{$x} - #{$x});
+    }
   }
 }

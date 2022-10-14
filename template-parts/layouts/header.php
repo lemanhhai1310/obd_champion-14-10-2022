@@ -29,10 +29,11 @@
                 <li><a href="#"><span class="uk-margin-small-right offcanvas__nav__icon offcanvas__nav__icon--dautruong" uk-icon="icon: thumbnails"></span> Đấu trường</a></li>
                 <li><a href="#"><span class="uk-margin-small-right offcanvas__nav__icon offcanvas__nav__icon--giaithuong" uk-icon="icon: bell"></span> Giải thưởng</a></li>
                 <li><a href="#"><span class="uk-margin-small-right offcanvas__nav__icon offcanvas__nav__icon--thele" uk-icon="icon: file-text"></span> Thể lệ</a></li>
+                <li><a href="#"><span class="uk-margin-small-right offcanvas__nav__icon offcanvas__nav__icon--thele" uk-icon="icon: file-text"></span> Cách đổi huy chương</a></li>
             </ul>
         </div>
         <div>
-            <a href="" class="uk-offcanvas-close offcanvas__back">Trang chủ <span class="uk-margin-small-left offcanvas__nav__icon offcanvas__nav__icon--back" uk-icon="icon: file-text"></span></a>
+            <a href="" class="uk-link-toggle uk-offcanvas-close offcanvas__back">Trang chủ <span class="uk-margin-small-left offcanvas__nav__icon offcanvas__nav__icon--back" uk-icon="icon: file-text"></span></a>
         </div>
 
     </div>
