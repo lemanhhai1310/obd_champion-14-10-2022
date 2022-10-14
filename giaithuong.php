@@ -16,7 +16,7 @@
     </div>
 </nav>
 <div class="uk-section-xsmall uk-background-default">
-    <div class="uk-container">
+    <div class="uk-container uk-container-expand">
         <div class="uk-width-1-1" uk-form-custom="target: > * > span:first-child">
             <select>
                 <option value="">Chọn đấu trường</option>
@@ -33,7 +33,7 @@
     </div>
 </div>
 <div class="uk-section-xsmall">
-    <div class="uk-container">
+    <div class="uk-container uk-container-expand">
         <div class="item__24">
             <div class="uk-grid-small uk-child-width-1-3 uk-grid-match" uk-grid>
                 <div class="uk-width-1-1">
