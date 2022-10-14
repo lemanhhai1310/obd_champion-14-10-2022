@@ -28,7 +28,7 @@
                     <li><a href="#"><span class="uk-margin-small-right offcanvas__nav__icon offcanvas__nav__icon--profile" uk-icon="icon: user"></span> Profile</a></li>
                     <li><a href="bangxephangtong.php"><span class="uk-margin-small-right offcanvas__nav__icon offcanvas__nav__icon--bxh" uk-icon="icon: table"></span> Bảng xếp hạng</a></li>
                     <li><a href="#"><span class="uk-margin-small-right offcanvas__nav__icon offcanvas__nav__icon--dautruong" uk-icon="icon: thumbnails"></span> Đấu trường</a></li>
-                    <li><a href="#"><span class="uk-margin-small-right offcanvas__nav__icon offcanvas__nav__icon--giaithuong" uk-icon="icon: bell"></span> Giải thưởng</a></li>
+                    <li><a href="giaithuong.php"><span class="uk-margin-small-right offcanvas__nav__icon offcanvas__nav__icon--giaithuong" uk-icon="icon: bell"></span> Giải thưởng</a></li>
                     <li><a href="#"><span class="uk-margin-small-right offcanvas__nav__icon offcanvas__nav__icon--thele" uk-icon="icon: file-text"></span> Thể lệ</a></li>
                     <li><a href="#"><span class="uk-margin-small-right offcanvas__nav__icon offcanvas__nav__icon--thele" uk-icon="icon: file-text"></span> Cách đổi huy chương</a></li>
                 </ul>

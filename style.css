@@ -1033,6 +1033,9 @@ body {
 .item__6:nth-child(n+2) {
   margin-top: 6px;
 }
+.item__4:nth-child(n+2) {
+  margin-top: 4px;
+}
 
 .navigation__navbarMenu {
   box-shadow: 0px -8px 16px rgba(117, 136, 163, 0.08);
@@ -1442,6 +1445,65 @@ body:not(.uk-offcanvas-flip).uk-offcanvas-container-animation {
 }
 .bangxephangtong__search__icon svg {
   opacity: 0;
+}
+
+.giaithuong__selectBtn {
+  padding-left: 16px;
+  padding-right: 50px;
+  text-transform: inherit;
+  color: #0F172A;
+  letter-spacing: 0.3px;
+  font-size: 14px;
+  font-family: "Dosis Regular", sans-serif;
+  border-color: #E2E8F0;
+  border-radius: 8px;
+  line-height: 48px;
+}
+.giaithuong__box1 {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+}
+.giaithuong__box1__title {
+  color: #0F172A;
+  font-size: 16px;
+  font-family: "Dosis SemiBold", sans-serif;
+  line-height: 1.25;
+}
+.giaithuong__box1__txt {
+  color: #FA4A0C;
+  font-size: 14px;
+  font-family: "Dosis Medium", sans-serif;
+  line-height: 1.2857142857;
+}
+.giaithuong__box1__btn {
+  text-transform: inherit;
+  background: #FA4A0C;
+  font-size: 16px;
+  font-family: "Dosis SemiBold", sans-serif;
+}
+.giaithuong__title {
+  letter-spacing: 0.3px;
+  color: #0F172A;
+  line-height: 1.4;
+  font-size: 24px;
+  font-family: "Dosis Bold", sans-serif;
+}
+.giaithuong__box2 {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  min-height: 141px;
+}
+.giaithuong__box2__txt1 {
+  color: #0F172A;
+  font-family: "Dosis SemiBold", sans-serif;
+  font-size: 18px;
+  line-height: 1.2777777778;
+}
+.giaithuong__box2__txt2 {
+  color: #0F172A;
+  font-family: "Dosis SemiBold", sans-serif;
+  font-size: 14px;
+  line-height: 1.2857142857;
 }
 
 /*# sourceMappingURL=style.css.map */

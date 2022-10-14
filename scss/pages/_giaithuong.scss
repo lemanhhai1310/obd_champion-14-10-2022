@@ -1,0 +1,60 @@
+.giaithuong{
+  &__selectBtn{
+    padding-left: 16px;
+    padding-right: 50px;
+    text-transform: inherit;
+    color: #0F172A;
+    letter-spacing: 0.3px;
+    font-size: 14px;
+    font-family: $font-Dosis-Regular;
+    border-color: #E2E8F0;
+    border-radius: 8px;
+    line-height: 48px;
+  }
+  &__box1{
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    &__title{
+      color: #0F172A;
+      font-size: 16px;
+      font-family: $font-Dosis-SemiBold;
+      line-height: (20/16);
+    }
+    &__txt{
+      color: #FA4A0C;
+      font-size: 14px;
+      font-family: $font-Dosis-Medium;
+      line-height: (18/14);
+    }
+    &__btn{
+      text-transform: inherit;
+      background: #{$primary-color};
+      font-size: 16px;
+      font-family: $font-Dosis-SemiBold;
+    }
+  }
+  &__title{
+    letter-spacing: 0.3px;
+    color: #0F172A;
+    line-height: 1.4;
+    font-size: 24px;
+    font-family: $font-Dosis-Bold;
+  }
+  &__box2{
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    min-height: 141px;
+    &__txt1{
+      color: #0F172A;
+      font-family: $font-Dosis-SemiBold;
+      font-size: 18px;
+      line-height: (23/18);
+    }
+    &__txt2{
+      color: #0F172A;
+      font-family: $font-Dosis-SemiBold;
+      font-size: 14px;
+      line-height: (18/14);
+    }
+  }
+}
