@@ -1,3 +1,79 @@
 .bangxephangtong{
-
+  &__title{
+    letter-spacing: 0.3px;
+    color: #0F172A;
+    font-size: 16px;
+    font-family: $font-Dosis-Bold;
+    line-height: 1.4;
+    margin: 0;
+  }
+  &__table{
+    border: 1px solid #DBDCE0;
+    @include media-breakpoint-down('s'){
+      border-left: none;
+      border-right: none;
+    }
+    thead{
+      tr{
+        &:first-child{
+          //border-top: 1px solid #DBDCE0;
+        }
+      }
+    }
+    tbody{
+      tr{
+        &:last-child{
+          //border-bottom: 1px solid #DBDCE0;
+        }
+      }
+    }
+    tr{
+      td{
+        color: #0F172A;
+        font-size: 13px;
+        font-family: $font-Dosis-Regular;
+      }
+      th{
+        text-transform: inherit;
+        letter-spacing: 0.3px;
+        color: rgba(0, 21, 133, 0.75);
+        font-size: 12px;
+        font-family: $font-Dosis-Bold;
+        background: rgba(41, 71, 122, 0.1);
+      }
+      td,th{
+        padding-top: 8px;
+        padding-bottom: 8px;
+        &:not(:first-child){
+          border-left: 1px solid #DBDCE0;
+        }
+      }
+    }
+  }
+  &__search{
+    width: 188px;
+    &__input{
+      height: 36px !important;
+      letter-spacing: 0.3px;
+      color: #94A3B8;
+      font-size: 14px;
+      font-family: $font-Dosis-Regular;
+      border-radius: 8px;
+      border-color: #E2E8F0 !important;
+      &::placeholder{
+        color: #94A3B8;
+      }
+      &:focus{
+        border-color: #{$primary-color} !important;
+      }
+    }
+    &__icon{
+      background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_564_876)'%3E%3Cpath d='M7.66665 13.9999C11.1644 13.9999 14 11.1644 14 7.66659C14 4.16878 11.1644 1.33325 7.66665 1.33325C4.16884 1.33325 1.33331 4.16878 1.33331 7.66659C1.33331 11.1644 4.16884 13.9999 7.66665 13.9999Z' stroke='%2394A3B8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M14.6666 14.6666L13.3333 13.3333' stroke='%2394A3B8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_564_876'%3E%3Crect width='16' height='16' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      background-position: center;
+      svg{
+        opacity: 0;
+      }
+    }
+  }
 }

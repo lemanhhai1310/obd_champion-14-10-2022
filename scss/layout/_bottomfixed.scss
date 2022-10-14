@@ -1,0 +1,14 @@
+.bottomfixed{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  box-shadow: 0px -8px 16px rgba(117, 136, 163, 0.08);
+  &__btn{
+    background: #FA4A0C !important;
+    border-radius: 8px;
+    text-transform: inherit;
+    letter-spacing: 0.3px;
+    font-size: 16px;
+    font-family: $font-Dosis-Bold;
+    line-height: 48px;
+  }
+}

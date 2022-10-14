@@ -18,26 +18,28 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.10/dist/js/uikit-icons.min.js"></script>
     <script src="js/app.js?v=<?php echo(time()) ?>"></script>
 </head>
-<body class="<?= (isset($isHome))?'isHome':'' ?>">
+<body class="<?= (isset($isHome))?'isHome':'' ?><?= (isset($bottomFixed))?'bottomFixed':'' ?>">
 <?php require "template-parts/commons/facebook_chat.php"; ?>
-<div id="offcanvas-reveal" class="offcanvas" uk-offcanvas="mode: reveal; overlay: false">
-    <div class="uk-offcanvas-bar offcanvas__bar uk-flex uk-flex-column">
-        <div class="uk-flex-auto">
-            <ul class="uk-nav-default offcanvas__nav" uk-nav>
-                <li><a href="#"><span class="uk-margin-small-right offcanvas__nav__icon offcanvas__nav__icon--profile" uk-icon="icon: user"></span> Profile</a></li>
-                <li><a href="#"><span class="uk-margin-small-right offcanvas__nav__icon offcanvas__nav__icon--bxh" uk-icon="icon: table"></span> Bảng xếp hạng</a></li>
-                <li><a href="#"><span class="uk-margin-small-right offcanvas__nav__icon offcanvas__nav__icon--dautruong" uk-icon="icon: thumbnails"></span> Đấu trường</a></li>
-                <li><a href="#"><span class="uk-margin-small-right offcanvas__nav__icon offcanvas__nav__icon--giaithuong" uk-icon="icon: bell"></span> Giải thưởng</a></li>
-                <li><a href="#"><span class="uk-margin-small-right offcanvas__nav__icon offcanvas__nav__icon--thele" uk-icon="icon: file-text"></span> Thể lệ</a></li>
-                <li><a href="#"><span class="uk-margin-small-right offcanvas__nav__icon offcanvas__nav__icon--thele" uk-icon="icon: file-text"></span> Cách đổi huy chương</a></li>
-            </ul>
-        </div>
-        <div>
-            <a href="" class="uk-link-toggle uk-offcanvas-close offcanvas__back">Trang chủ <span class="uk-margin-small-left offcanvas__nav__icon offcanvas__nav__icon--back" uk-icon="icon: file-text"></span></a>
-        </div>
+<?php if (isset($isHome)): ?>
+    <div id="offcanvas-reveal" class="offcanvas" uk-offcanvas="mode: reveal; overlay: false">
+        <div class="uk-offcanvas-bar offcanvas__bar uk-flex uk-flex-column">
+            <div class="uk-flex-auto">
+                <ul class="uk-nav-default offcanvas__nav" uk-nav>
+                    <li><a href="#"><span class="uk-margin-small-right offcanvas__nav__icon offcanvas__nav__icon--profile" uk-icon="icon: user"></span> Profile</a></li>
+                    <li><a href="bangxephangtong.php"><span class="uk-margin-small-right offcanvas__nav__icon offcanvas__nav__icon--bxh" uk-icon="icon: table"></span> Bảng xếp hạng</a></li>
+                    <li><a href="#"><span class="uk-margin-small-right offcanvas__nav__icon offcanvas__nav__icon--dautruong" uk-icon="icon: thumbnails"></span> Đấu trường</a></li>
+                    <li><a href="#"><span class="uk-margin-small-right offcanvas__nav__icon offcanvas__nav__icon--giaithuong" uk-icon="icon: bell"></span> Giải thưởng</a></li>
+                    <li><a href="#"><span class="uk-margin-small-right offcanvas__nav__icon offcanvas__nav__icon--thele" uk-icon="icon: file-text"></span> Thể lệ</a></li>
+                    <li><a href="#"><span class="uk-margin-small-right offcanvas__nav__icon offcanvas__nav__icon--thele" uk-icon="icon: file-text"></span> Cách đổi huy chương</a></li>
+                </ul>
+            </div>
+            <div>
+                <a href="" class="uk-link-toggle uk-offcanvas-close offcanvas__back">Trang chủ <span class="uk-margin-small-left offcanvas__nav__icon offcanvas__nav__icon--back" uk-icon="icon: file-text"></span></a>
+            </div>
 
+        </div>
     </div>
-</div>
+<?php endif; ?>
 <!--app-->
 <div id="app" class="app uk-offcanvas-content uk-position-relative">
     <!--app__container-->

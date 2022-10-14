@@ -1,11 +1,21 @@
 body{
   font-family: $font-Dosis-Regular;
   background: #{$primary-color};
+  &.isHome{
+
+  }
+  &:not(.isHome){
+
+  }
 }
 #app{
   background: #F5F5F8;
   .isHome &{
     padding-bottom: 56px;
+  }
+  .bottomFixed &{
+    padding-bottom: 74px;
+
   }
   .uk-offcanvas-page &{
     padding-bottom: 0 !important;
