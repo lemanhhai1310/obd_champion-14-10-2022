@@ -7,7 +7,7 @@
     </div>
 </nav>
 <div class="home__bxh uk-section-small uk-background-norepeat uk-background-center-center uk-background-cover" data-src="images/Rectangle93.png" uk-img>
-    <div class="uk-container uk-text-center">
+    <div class="uk-container uk-container-expand uk-text-center">
         <div class="uk-cover-container uk-display-inline-block">
             <img src="images/image15.png" alt="" uk-cover="">
             <canvas width="251" height="149"></canvas>
@@ -21,7 +21,7 @@
     </div>
 </div>
 <div class="home__content uk-section-xsmall uk-padding-remove-bottom" uk-height-viewport="expand: true">
-    <div class="uk-container">
+    <div class="uk-container uk-container-expand">
         <div class="item__24">
             <form class="home__content__search uk-search uk-search-default uk-width-1-1">
                 <span class="home__content__search__icon" uk-search-icon></span>
@@ -45,20 +45,32 @@
                             <?php
                             $data = array(
                                 array(
-                                    'img' => 'images/image14.png',
-                                    'txt' => 'Đấu trường Sói',
+                                    'img' => 'images/dau-truong-1.png',
+                                    'txt' => 'Đấu trường 1',
                                 ),
                                 array(
-                                    'img' => 'images/image141.png',
-                                    'txt' => 'Chiến binh GTA V',
+                                    'img' => 'images/dau-truong-2.png',
+                                    'txt' => 'Đấu trường 2',
                                 ),
                                 array(
-                                    'img' => 'images/lemanhhai_anhthe.jpg',
-                                    'txt' => 'Đấu trường Sói',
+                                    'img' => 'images/dau-truong-3.png',
+                                    'txt' => 'Đấu trường 3',
                                 ),
                                 array(
-                                    'img' => 'images/image14.png',
-                                    'txt' => 'Chiến binh GTA V',
+                                    'img' => 'images/dau-truong-4.png',
+                                    'txt' => 'Đấu trường 4',
+                                ),
+                                array(
+                                    'img' => 'images/dau-truong-5.png',
+                                    'txt' => 'Đấu trường 5',
+                                ),
+                                array(
+                                    'img' => 'images/dau-truong-6.png',
+                                    'txt' => 'Đấu trường 6',
+                                ),
+                                array(
+                                    'img' => 'images/dau-truong-7.png',
+                                    'txt' => 'Đấu trường 7',
                                 ),
                             );
                             foreach ($data as $k=>$v): ?>

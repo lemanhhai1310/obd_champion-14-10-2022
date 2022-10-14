@@ -58,6 +58,7 @@
       $y:14px;
       $x:calc((#{$w} - 2px - #{$y})/2);
       box-sizing: border-box;
+      max-width: #{$w};
       min-width: #{$w};
       border: 1px solid #F4F4F4;
       box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
