@@ -4,18 +4,20 @@
 
     }
     &__a{
+      $x:15px;
       padding-top: 20px !important;
       padding-bottom: 20px !important;
       color: #0F172A !important;
       font-size: 16px;
       font-family: $font-Dosis-Medium;
       position: relative;
+      padding-left: #{$x} !important;
       &:before{
         content: "";
         position: absolute;
         width: 16px;
         height: 16px;
-        right: 0;
+        right: #{$x};
         top: 50%;
         transform: translateY(-50%);
         background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.33334 13.3332L9.72392 8.9426C10.2424 8.42408 10.2424 7.5756 9.72392 7.05708L5.33334 2.6665' stroke='%230F172A' stroke-opacity='0.35' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
@@ -23,10 +25,9 @@
         background-repeat: no-repeat;
       }
       &:after{
-        $x:15px;
         content: "";
-        left: 0;
-        right: calc(0px - #{$x});
+        left: #{$x};
+        right: 0;
         bottom: 0;
         border-bottom: 1px solid #E2E8F0;
         position: absolute;
@@ -108,7 +109,7 @@
       background: #FFFFFF;
       border-radius: 16px 16px 0px 0px;
       .uk-open> &{
-        top: 35vh;
+        top: 20vh;
       }
     }
   }

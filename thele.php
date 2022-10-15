@@ -15,16 +15,13 @@
 
     </div>
 </nav>
-<div>
-    <div class="uk-container uk-container-expand">
-        <ul class="uk-nav-default thele__nav" uk-nav>
-            <li class="thele__nav__li"><a class="thele__nav__a" href="#offcanvas-overlay-thele-1" uk-toggle><span class="uk-margin-small-right thele__nav__icon thele__nav__icon--c1" uk-icon="icon: table"></span> Đối tượng tham gia</a></li>
-            <li class="thele__nav__li"><a class="thele__nav__a" href="#offcanvas-overlay-thele-2" uk-toggle><span class="uk-margin-small-right thele__nav__icon thele__nav__icon--c2" uk-icon="icon: thumbnails"></span> Điều kiện xét duyệt</a></li>
-            <li class="thele__nav__li"><a class="thele__nav__a" href="#offcanvas-overlay-thele-3" uk-toggle><span class="uk-margin-small-right thele__nav__icon thele__nav__icon--c3" uk-icon="icon: trash"></span> Cách xét điểm kinh nghiệm</a></li>
-            <li class="thele__nav__li"><a class="thele__nav__a" href="#offcanvas-overlay-thele-4" uk-toggle><span class="uk-margin-small-right thele__nav__icon thele__nav__icon--c4" uk-icon="icon: trash"></span> Cách đổi huy chương</a></li>
-        </ul>
-    </div>
-</div>
+<ul class="uk-nav-default thele__nav" uk-nav>
+    <li class="thele__nav__li"><a class="thele__nav__a" href="#offcanvas-overlay-thele-1" uk-toggle><span class="uk-margin-small-right thele__nav__icon thele__nav__icon--c1" uk-icon="icon: table"></span> Đối tượng tham gia</a></li>
+    <li class="thele__nav__li"><a class="thele__nav__a" href="#offcanvas-overlay-thele-2" uk-toggle><span class="uk-margin-small-right thele__nav__icon thele__nav__icon--c2" uk-icon="icon: thumbnails"></span> Điều kiện xét duyệt</a></li>
+    <li class="thele__nav__li"><a class="thele__nav__a" href="#offcanvas-overlay-thele-3" uk-toggle><span class="uk-margin-small-right thele__nav__icon thele__nav__icon--c3" uk-icon="icon: trash"></span> Cách xét điểm kinh nghiệm</a></li>
+    <li class="thele__nav__li"><a class="thele__nav__a" href="#offcanvas-overlay-thele-4" uk-toggle><span class="uk-margin-small-right thele__nav__icon thele__nav__icon--c4" uk-icon="icon: trash"></span> Cách đổi huy chương</a></li>
+</ul>
+
 <div id="offcanvas-overlay-thele-1" class="thele__offcanvas" uk-offcanvas="overlay: true">
     <div class="uk-offcanvas-bar thele__offcanvas__bar uk-flex uk-flex-column">
         <div class="thele__offcanvas__header uk-position-relative uk-text-center">
