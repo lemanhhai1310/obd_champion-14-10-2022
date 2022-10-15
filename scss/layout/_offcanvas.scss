@@ -99,7 +99,7 @@ body{
 }
 .app{
   transition: margin .3s ease-out;
-  .uk-offcanvas-page &{
+  .uk-offcanvas-container.isHome &{
     margin-top: #{$x};
     margin-bottom: #{$x};
     filter: drop-shadow(0px 8px 30px rgba(0, 0, 0, 0.3));

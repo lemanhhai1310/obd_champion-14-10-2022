@@ -24,7 +24,7 @@
                     array(
                         'txt' => 'Thể lệ',
                         'icon' => 'thele',
-                        'url' => '',
+                        'url' => 'thele.php',
                     ),
                     array(
                         'txt' => 'Tài khoản',

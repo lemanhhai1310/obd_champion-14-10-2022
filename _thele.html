@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="REFRESH" content="1800"/>
+    <title>Thể lệ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <!--CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.10/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="style.css?v=1665804592">
+
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.10/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.10/dist/js/uikit-icons.min.js"></script>
+    <script src="js/app.js?v=1665804592"></script>
+</head>
+<body class="">
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+     attribution=setup_tool
+     page_id="2428809380682169"
+     logged_in_greeting="Bạn cần cắt HTML/CSS? Hãy chat ngay với chúng tôi"
+     logged_out_greeting="Bạn cần cắt HTML/CSS? Hãy chat ngay với chúng tôi">
+</div>
+<script>
+    defer(function() {
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml            : true,
+                version          : 'v5.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    }, 5000);
+</script><!--app-->
+<div id="app" class="app uk-offcanvas-content uk-position-relative">
+    <!--app__container-->
+    <div class="app__container" uk-height-viewport="expand: true">
+        <nav class="uk-navbar-container navbar__top" uk-navbar uk-sticky>
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-toggle" href=".">
+                    <span class="navbar__top__icon navbar__top__icon--back" uk-icon="icon: arrow-left; ratio: 1"></span>
+                </a>
+            </div>
+            <div class="uk-navbar-center">
+                <div class="uk-navbar-item">
+                    <h1 class="uk-h1 navbar__top__title">Thể lệ</h1>
+                </div>
+            </div>
+            <div class="uk-navbar-right">
+
+            </div>
+        </nav>
+        <div>
+            <div class="uk-container uk-container-expand">
+                <ul class="uk-nav-default thele__nav" uk-nav>
+                    <li class="thele__nav__li"><a class="thele__nav__a" href="#offcanvas-overlay-thele-1" uk-toggle><span class="uk-margin-small-right thele__nav__icon thele__nav__icon--c1" uk-icon="icon: table"></span> Đối tượng tham gia</a></li>
+                    <li class="thele__nav__li"><a class="thele__nav__a" href="#offcanvas-overlay-thele-2" uk-toggle><span class="uk-margin-small-right thele__nav__icon thele__nav__icon--c2" uk-icon="icon: thumbnails"></span> Điều kiện xét duyệt</a></li>
+                    <li class="thele__nav__li"><a class="thele__nav__a" href="#offcanvas-overlay-thele-3" uk-toggle><span class="uk-margin-small-right thele__nav__icon thele__nav__icon--c3" uk-icon="icon: trash"></span> Cách xét điểm kinh nghiệm</a></li>
+                    <li class="thele__nav__li"><a class="thele__nav__a" href="#offcanvas-overlay-thele-4" uk-toggle><span class="uk-margin-small-right thele__nav__icon thele__nav__icon--c4" uk-icon="icon: trash"></span> Cách đổi huy chương</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="offcanvas-overlay-thele-1" class="thele__offcanvas" uk-offcanvas="overlay: true">
+            <div class="uk-offcanvas-bar thele__offcanvas__bar uk-flex uk-flex-column">
+                <div class="thele__offcanvas__header uk-position-relative uk-text-center">
+                    <button class="uk-offcanvas-close uk-position-center-right thele__offcanvas__close" type="button" uk-close></button>
+                    <h3 class="uk-h3 thele__offcanvas__title">Đối tượng tham gia</h3>
+                </div>
+                <div class="thele__offcanvas__body uk-flex-auto uk-overflow-auto">
+                    <article class="uk-article">
+                        <ul class="uk-list uk-list-circle">
+                            <li>OBD Ads và đối tác</li>
+                            <li>Khối nhà máy</li>
+                            <li>Khối thời trang</li>
+                            <li>Khối bất động sản</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div id="offcanvas-overlay-thele-2" class="thele__offcanvas" uk-offcanvas="overlay: true">
+            <div class="uk-offcanvas-bar thele__offcanvas__bar uk-flex uk-flex-column">
+                <div class="thele__offcanvas__header uk-position-relative uk-text-center">
+                    <button class="uk-offcanvas-close uk-position-center-right thele__offcanvas__close" type="button" uk-close></button>
+                    <h3 class="uk-h3 thele__offcanvas__title">Điều kiện xét duyệt</h3>
+                </div>
+                <div class="thele__offcanvas__body uk-flex-auto uk-overflow-auto">
+                    <article class="uk-article">
+                        <ul class="uk-list uk-list-circle">
+                            <li>Xếp hạng đấu trường: Căn cứ vào kết quả kinh doanh của tháng trước đó</li>
+                            <li>Xếp hạng giải đấu: Tổ chức giải đấu và treo thưởng theo tuần</li>
+                        </ul>
+                        <p>VD: Kết quả kinh doanh tháng 7 sẽ là cơ sở xét duyệt Cấp độ đấu trường bạn sẽ tham gia giải thưởng OBD Champion tháng 8</p>
+                        <p>Kết quả kinh doanh mỗi tuần trong tháng 8 sẽ là cơ sở để xét duyệt Giải thưởng.</p>
+                        <p>Như vậy, Tháng 8 bạn sẽ được xét thưởng 4 lần.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div id="offcanvas-overlay-thele-3" class="thele__offcanvas" uk-offcanvas="overlay: true">
+            <div class="uk-offcanvas-bar thele__offcanvas__bar uk-flex uk-flex-column">
+                <div class="thele__offcanvas__header uk-position-relative uk-text-center">
+                    <button class="uk-offcanvas-close uk-position-center-right thele__offcanvas__close" type="button" uk-close></button>
+                    <h3 class="uk-h3 thele__offcanvas__title">Cách xét điểm kinh nghiệm</h3>
+                </div>
+                <div class="thele__offcanvas__body uk-flex-auto uk-overflow-auto">
+                    <article class="uk-article">
+                        <p>Điểm kinh nghiệm (ĐKN) sẽ được tính theo công thức:</p>
+                        <ul class="uk-list uk-list-circle">
+                            <li>Điểm kinh nghiệm = (Doanh thu xuất hàng x 1) +  (Lợi nhuận ước chừng x 10)</li>
+                        </ul>
+                        <p>> Kết quả kinh doanh tháng gần nhất sẽ là cơ sở để xét duyệt Điểm kinh nghiệm (ĐKN)</p>
+                        <p>> Nếu HT con có ĐKN cao nhất lớn hơn tổng ĐKN của những HT còn lại trong một HT mẹ thì ĐKN của HT mẹ = ĐKN của những HT con còn lại x 2 và HT con có ĐKN cao nhất đó sẽ được tham gia Đấu trường với mức ĐKN hiện tại.</p>
+
+                        <p>> Ví dụ:</p>
+                        <p>HT mẹ A có 3 HT con: HT B (ĐKN = 10.000), HT C (ĐKN = 4.000), HT D (ĐKN = 2.000), thì ĐKN của HT A sẽ = (4.000 + 2.000) x 2 = 12.000 và được tham gia ở cấp độ Đấu trường tương ứng với 12.000 ĐKN.</p>
+                        <p>HT con B sẽ được tham gia ở cấp độ Đấu trường tương ứng với 10.000 ĐKN.</p>
+                        <p>1 ĐKN tương ứng với 1 triệu đồng, tương tự 3.000 ĐKN tương ứng với 3 tỷ đồng.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div id="offcanvas-overlay-thele-4" class="thele__offcanvas" uk-offcanvas="overlay: true">
+            <div class="uk-offcanvas-bar thele__offcanvas__bar uk-flex uk-flex-column">
+                <div class="thele__offcanvas__header uk-position-relative uk-text-center">
+                    <button class="uk-offcanvas-close uk-position-center-right thele__offcanvas__close" type="button" uk-close></button>
+                    <h3 class="uk-h3 thele__offcanvas__title">Cách đổi huy chương</h3>
+                </div>
+                <div class="thele__offcanvas__body uk-flex-auto uk-overflow-auto">
+                    <article class="uk-article">
+
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/app__container-->
+
+</div>
+<!--/app-->
+</body>
+</html>
