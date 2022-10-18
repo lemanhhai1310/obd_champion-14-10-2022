@@ -50,7 +50,7 @@
 <?php if (isset($bottomFixed)): ?>
 <div class="bottomfixed uk-section-xsmall uk-background-default uk-position-bottom uk-position-fixed">
     <div class="uk-container">
-        <a href="" class="bottomfixed__btn uk-button uk-button-secondary uk-width-1-1 uk-button-large">
+        <a href="kiemtrathuhang.php" class="bottomfixed__btn uk-button uk-button-secondary uk-width-1-1 uk-button-large">
             Kiểm tra thứ hạng
         </a>
     </div>

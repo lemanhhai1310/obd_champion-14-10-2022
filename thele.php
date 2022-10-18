@@ -20,6 +20,7 @@
     <li class="thele__nav__li"><a class="thele__nav__a" href="#offcanvas-overlay-thele-2" uk-toggle><span class="uk-margin-small-right thele__nav__icon thele__nav__icon--c2" uk-icon="icon: thumbnails"></span> Điều kiện xét duyệt</a></li>
     <li class="thele__nav__li"><a class="thele__nav__a" href="#offcanvas-overlay-thele-3" uk-toggle><span class="uk-margin-small-right thele__nav__icon thele__nav__icon--c3" uk-icon="icon: trash"></span> Cách xét điểm kinh nghiệm</a></li>
     <li class="thele__nav__li"><a class="thele__nav__a" href="#offcanvas-overlay-thele-4" uk-toggle><span class="uk-margin-small-right thele__nav__icon thele__nav__icon--c4" uk-icon="icon: trash"></span> Cách đổi huy chương</a></li>
+    <li class="thele__nav__li"><a class="thele__nav__a" href="#offcanvas-overlay-thele-5" uk-toggle><span class="uk-margin-small-right thele__nav__icon thele__nav__icon--c5" uk-icon="icon: trash"></span> Giải phụ</a></li>
 </ul>
 
 <div id="offcanvas-overlay-thele-1" class="thele__offcanvas" uk-offcanvas="overlay: true">
@@ -50,7 +51,7 @@
             <article class="uk-article">
                 <ul class="uk-list uk-list-circle">
                     <li>Xếp hạng đấu trường: Căn cứ vào kết quả kinh doanh của tháng trước đó</li>
-                    <li>Xếp hạng giải đấu: Tổ chức giải đấu và treo thưởng theo tuần</li>
+                    <li>Xếp hạng giải đấu: Tổ chức giải đấu và trao huy chương theo tuần</li>
                 </ul>
                 <p>VD: Kết quả kinh doanh tháng 7 sẽ là cơ sở xét duyệt Cấp độ đấu trường bạn sẽ tham gia giải thưởng OBD Champion tháng 8</p>
                 <p>Kết quả kinh doanh mỗi tuần trong tháng 8 sẽ là cơ sở để xét duyệt Giải thưởng.</p>
@@ -87,6 +88,19 @@
         <div class="thele__offcanvas__header uk-position-relative uk-text-center">
             <button class="uk-offcanvas-close uk-position-center-right thele__offcanvas__close" type="button" uk-close></button>
             <h3 class="uk-h3 thele__offcanvas__title">Cách đổi huy chương</h3>
+        </div>
+        <div class="thele__offcanvas__body uk-flex-auto uk-overflow-auto">
+            <article class="uk-article">
+
+            </article>
+        </div>
+    </div>
+</div>
+<div id="offcanvas-overlay-thele-5" class="thele__offcanvas" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar thele__offcanvas__bar uk-flex uk-flex-column">
+        <div class="thele__offcanvas__header uk-position-relative uk-text-center">
+            <button class="uk-offcanvas-close uk-position-center-right thele__offcanvas__close" type="button" uk-close></button>
+            <h3 class="uk-h3 thele__offcanvas__title">Giải phụ</h3>
         </div>
         <div class="thele__offcanvas__body uk-flex-auto uk-overflow-auto">
             <article class="uk-article">

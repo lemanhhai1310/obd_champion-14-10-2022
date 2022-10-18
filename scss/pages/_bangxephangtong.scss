@@ -42,6 +42,7 @@
         background: rgba(41, 71, 122, 0.1);
       }
       td,th{
+        white-space: nowrap;
         padding-top: 8px;
         padding-bottom: 8px;
         &:not(:first-child){

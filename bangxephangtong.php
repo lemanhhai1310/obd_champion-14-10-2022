@@ -47,7 +47,7 @@
                 </div>
             </div>
             <div class="item__15">
-                <div class="home__boxSpace">
+                <div class="home__boxSpace uk-overflow-auto">
                     <table class="bangxephangtong__table uk-table uk-table-small uk-margin-remove-bottom">
                         <thead>
                         <tr>

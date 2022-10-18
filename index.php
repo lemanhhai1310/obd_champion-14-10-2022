@@ -91,9 +91,129 @@
                     </div>
                 </li>
                 <li>Hello again!</li>
-                <li>Bazinga!</li>
+                <li>
+                    <?php require "template-parts/boloc.php"; ?>
+                    <div class="uk-section-xsmall">
+                        <div class="uk-container uk-container-expand">
+                            <div class="item__24">
+                                <div class="uk-grid-small uk-child-width-1-3 uk-grid-match" uk-grid>
+                                    <div class="uk-width-1-1">
+                                        <h2 class="uk-h2 uk-text-center giaithuong__title">Đấu trường 5</h2>
+                                    </div>
+                                    <?php
+                                    $data = array(
+                                        array(
+                                            'img' => 'images/folder/5.1.png',
+                                            'txt' => '15 triệu đồng',
+                                            'percent' => '25%',
+                                        ),
+                                        array(
+                                            'img' => 'images/folder/5.2.png',
+                                            'txt' => '15 triệu đồng',
+                                            'percent' => '25%',
+                                        ),
+                                        array(
+                                            'img' => 'images/folder/5.3.png',
+                                            'txt' => '30 triệu đồng',
+                                            'percent' => '25%',
+                                        ),
+                                        array(
+                                            'img' => 'images/folder/5.4.png',
+                                            'txt' => '60 triệu đồng',
+                                            'percent' => '24%',
+                                        ),
+                                        array(
+                                            'img' => 'images/folder/5.5.png',
+                                            'txt' => '600 triệu đồng',
+                                            'percent' => '1%',
+                                        ),
+                                    );
+                                    foreach ($data as $k=>$v): ?>
+                                        <div class="<?= ($k<2)?'uk-width-1-2':'' ?>">
+                                            <div class="giaithuong__box2 item__10 uk-card uk-card-default uk-padding-small uk-text-center uk-flex uk-flex-column">
+                                                <div class="item__10">
+                                                    <div class="giaithuong__box2__Boximg uk-flex-inline uk-margin-auto uk-cover-container">
+                                                        <img class="" src="<?= $v['img'] ?>" alt="" uk-cover="">
+                                                        <canvas width="88" height="128"></canvas>
+                                                    </div>
+                                                </div>
+                                                <div class="item__10">
+                                                    <div class="item__4 <?= ($k<2)?'giaithuong__box2__txt1':'giaithuong__box2__txt2' ?>"><?= $v['txt'] ?></div>
+                                                    <div class="item__4 giaithuong__box1__txt"><?= $v['percent'] ?></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <?php endforeach; ?>
+                                </div>
+                            </div>
+                            <?php require "template-parts/dautruong.php"; ?>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
 </div>
+    <div class="" uk-height-viewport="expand: true">
+        <div class="item__6 uk-background-default uk-height-min-small uk-section-xsmall">
+            <div class="uk-container uk-container-expand">
+                <div class="item__15">
+                    <h2 class="uk-h2 bangxephangtong__title">Xếp hạng</h2>
+                </div>
+                <div class="item__15">
+                    <div class="home__boxSpace">
+                        <img src="images/tg_image_3389858155.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item__6 uk-background-default uk-height-min-small uk-section-xsmall">
+            <div class="uk-container uk-container-expand">
+                <div class="item__15">
+                    <div class="uk-flex-middle uk-grid-small" uk-grid>
+                        <div class="uk-width-expand">
+                            <h2 class="uk-h2 bangxephangtong__title">Danh sách</h2>
+                        </div>
+                        <div class="uk-width-auto">
+                            <form class="uk-search uk-search-default bangxephangtong__search">
+                                <span class="bangxephangtong__search__icon" uk-search-icon></span>
+                                <input class="uk-search-input bangxephangtong__search__input" type="search" placeholder="Nhập tên hệ thống">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="item__15">
+                    <div class="home__boxSpace">
+                        <table class="bangxephangtong__table uk-table uk-table-small uk-margin-remove-bottom">
+                            <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th>Cộng đồng</th>
+                                <th>Hệ thống</th>
+                                <th>Nhánh</th>
+                                <th>ĐKN</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Cộng đồng F99</td>
+                                <td>Eagle Brand</td>
+                                <td>Tên nhánh</td>
+                                <td>15.000</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Cộng đồng S10</td>
+                                <td>Eagle Brand</td>
+                                <td>Tên nhánh</td>
+                                <td>15.000</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 <?php require "template-parts/layouts/footer.php"; ?>

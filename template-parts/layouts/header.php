@@ -30,7 +30,7 @@
                     <li><a href="#"><span class="uk-margin-small-right offcanvas__nav__icon offcanvas__nav__icon--dautruong" uk-icon="icon: thumbnails"></span> Đấu trường</a></li>
                     <li><a href="giaithuong.php"><span class="uk-margin-small-right offcanvas__nav__icon offcanvas__nav__icon--giaithuong" uk-icon="icon: bell"></span> Giải thưởng</a></li>
                     <li><a href="thele.php"><span class="uk-margin-small-right offcanvas__nav__icon offcanvas__nav__icon--thele" uk-icon="icon: file-text"></span> Thể lệ</a></li>
-                    <li><a href="#"><span class="uk-margin-small-right offcanvas__nav__icon offcanvas__nav__icon--thele" uk-icon="icon: file-text"></span> Cách đổi huy chương</a></li>
+                    <li><a href="huychuong.php"><span class="uk-margin-small-right offcanvas__nav__icon offcanvas__nav__icon--huychuong" uk-icon="icon: file-text"></span> Huy chương</a></li>
                 </ul>
             </div>
             <div>
