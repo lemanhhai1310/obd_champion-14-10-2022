@@ -1,0 +1,53 @@
+.sosanhxephang{
+  &__txt{
+    text-align: center;
+    letter-spacing: 0.3px;
+    line-height: 1.4;
+    font-family: $font-Dosis-Medium;
+    font-size: 14px;
+    color: #0F172A;
+  }
+  &__divider{
+    $x:0px;
+    margin-left: calc(0px - #{$x});
+    >*{
+      padding-left: #{$x};
+      &:not(.uk-first-column){
+        &:before{
+          left: calc((#{$x - 0px})/2);
+        }
+      }
+    }
+  }
+  &__box{
+    &__txt{
+      color: #0F172A;
+      font-size: 14px;
+      font-family: $font-Dosis-Medium;
+      line-height: (18/14);
+    }
+    background: #FFFFFF;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    position: relative;
+    &:before{
+      content: attr(data-txt);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      background: #E2E8F0;
+      width: 50px;
+      height: 32px;
+      border-radius: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      color: rgba(15, 23, 42, 0.5);
+      font-size: 16px;
+      font-family: $font-Dosis-SemiBold;
+      line-height: (20/16);
+    }
+  }
+}

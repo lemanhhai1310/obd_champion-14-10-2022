@@ -1750,4 +1750,53 @@ body:not(.uk-offcanvas-flip).uk-offcanvas-container-animation {
   border-top: 1px solid #E2E8F0;
 }
 
+.sosanhxephang__txt {
+  text-align: center;
+  letter-spacing: 0.3px;
+  line-height: 1.4;
+  font-family: "Dosis Medium", sans-serif;
+  font-size: 14px;
+  color: #0F172A;
+}
+.sosanhxephang__divider {
+  margin-left: calc(0px - 0px);
+}
+.sosanhxephang__divider > * {
+  padding-left: 0px;
+}
+.sosanhxephang__divider > *:not(.uk-first-column):before {
+  left: calc((0px) / 2);
+}
+.sosanhxephang__box {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  position: relative;
+}
+.sosanhxephang__box__txt {
+  color: #0F172A;
+  font-size: 14px;
+  font-family: "Dosis Medium", sans-serif;
+  line-height: 1.2857142857;
+}
+.sosanhxephang__box:before {
+  content: attr(data-txt);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #E2E8F0;
+  width: 50px;
+  height: 32px;
+  border-radius: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  color: rgba(15, 23, 42, 0.5);
+  font-size: 16px;
+  font-family: "Dosis SemiBold", sans-serif;
+  line-height: 1.25;
+}
+
 /*# sourceMappingURL=style.css.map */
