@@ -12,7 +12,9 @@
         </div>
     </div>
     <div class="uk-navbar-right">
-
+        <a class="uk-navbar-toggle" href="#" uk-tooltip="Bạn chỉ được so sánh xếp hạng với các hệ thống có thứ hạng gần kề với thứ hạng hiện tại">
+            <span class="navbar__top__icon navbar__top__icon--info" uk-icon="icon: calendar; ratio: 1"></span>
+        </a>
     </div>
 </nav>
 <div class="uk-section-xsmall uk-background-default" uk-height-viewport="expand: true">

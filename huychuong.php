@@ -37,24 +37,41 @@
                                 <th>Số lượng</th>
                                 <th>Đã giao dịch</th>
                                 <th>Còn lại</th>
-                                <th>Table Heading</th>
-                                <th>Table Heading</th>
-                                <th>Table Heading</th>
                             </tr>
                             </thead>
                             <tbody>
-                            <?php for ($i=0;$i<=5;$i++): ?>
-                                <tr>
-                                    <td>Đấu trường 1</td>
-                                    <td>Vàng</td>
-                                    <td>1</td>
-                                    <td>1</td>
-                                    <td>0</td>
-                                    <td>Table Data</td>
-                                    <td>Table Data</td>
-                                    <td>Table Data</td>
-                                </tr>
-                            <?php endfor; ?>
+                            <tr>
+                                <td rowspan="3">Đấu trường 1</td>
+                                <td>Vàng</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Bạc</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Đồng</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">Đấu trường 2</td>
+                                <td>Vàng</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Bạc</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>0</td>
+                            </tr>
                             </tbody>
                         </table>
                     </div>
@@ -86,23 +103,21 @@
                             <th>Huy chương</th>
                             <th>Đấu trường</th>
                             <th>Số lượng</th>
+                            <th>HT cho</th>
                             <th>HT nhận</th>
-                            <th>Table Heading</th>
-                            <th>Table Heading</th>
-                            <th>Table Heading</th>
+                            <th>Ngày thực hiện</th>
                         </tr>
                         </thead>
                         <tbody>
                         <?php for ($i=0;$i<=5;$i++): ?>
                         <tr>
-                            <td>1</td>
+                            <td><?= $i+1; ?></td>
                             <td>Vàng</td>
                             <td>Đấu trường 1</td>
                             <td>1</td>
+                            <td>HT B</td>
                             <td>HT A</td>
-                            <td>Table Data</td>
-                            <td>Table Data</td>
-                            <td>Table Data</td>
+                            <td>02/08/2022</td>
                         </tr>
                         <?php endfor; ?>
                         </tbody>

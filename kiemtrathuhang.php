@@ -6,10 +6,13 @@
             <span class="navbar__top__icon navbar__top__icon--back" uk-icon="icon: arrow-left; ratio: 1"></span>
         </a>
     </div>
-    <div class="uk-navbar-right uk-flex-auto">
-        <div class="uk-navbar-item uk-flex-1" style="padding-right: 15px;">
+    <div class="uk-navbar-right uk-flex-auto" style="gap: 0;">
+        <div class="uk-navbar-item uk-flex-1">
             <input class="uk-input kiemtrathuhang__input" type="text" placeholder="" value="Hệ thống A">
         </div>
+        <a class="uk-navbar-toggle" href="#" uk-tooltip="Bạn chỉ được so sánh xếp hạng với các hệ thống có thứ hạng gần kề với thứ hạng hiện tại">
+            <span class="navbar__top__icon navbar__top__icon--info" uk-icon="icon: calendar; ratio: 1"></span>
+        </a>
     </div>
 </nav>
 <div class="uk-section-xsmall uk-background-default" uk-height-viewport="expand: true">
@@ -19,10 +22,42 @@
                 <div class="uk-position-relative kiemtrathuhang__box1" data-txt="VS.">
                     <div class="uk-child-width-expand uk-grid-large" uk-grid>
                         <div>
-                            <input class="uk-input kiemtrathuhang__input kiemtrathuhang__input--c1" type="text" placeholder="Tên HT muốn so sánh" value="Hệ thống A">
+                            <div class="uk-width-1-1" uk-form-custom="target: > * > span:first-child">
+                                <select>
+                                    <option value="">Tên HT muốn so sánh</option>
+                                    <option selected value="1">Hệ thống A</option>
+                                </select>
+                                <button class="uk-width-1-1 kiemtrathuhang__btnSelect uk-button uk-button-default" type="button" tabindex="-1">
+                                    <span class="line-clamp-1"></span>
+                                    <span class="uk-position-center-right" uk-icon="icon: chevron-down"></span>
+                                </button>
+                            </div>
+                            <input hidden class="uk-input kiemtrathuhang__input kiemtrathuhang__input--c1" type="text" placeholder="Tên HT muốn so sánh" value="Hệ thống A">
                         </div>
                         <div>
-                            <input class="uk-input kiemtrathuhang__input kiemtrathuhang__input--c1" type="text" placeholder="Tên HT muốn so sánh" value="">
+                            <div class="uk-width-1-1" uk-form-custom="target: > * > span:first-child">
+                                <select id="dynamic_select">
+                                    <option value="">Tên HT muốn so sánh</option>
+                                    <option value="sosanhxephang.php">Hệ thống B</option>
+                                </select>
+                                <button class="uk-width-1-1 kiemtrathuhang__btnSelect uk-button uk-button-default" type="button" tabindex="-1">
+                                    <span class="line-clamp-1"></span>
+                                    <span class="uk-position-center-right" uk-icon="icon: chevron-down"></span>
+                                </button>
+                            </div>
+                            <script>
+                                $(function(){
+                                    // bind change event to select
+                                    $('#dynamic_select').on('change', function () {
+                                        var url = $(this).val(); // get selected value
+                                        if (url) { // require a URL
+                                            window.location = url; // redirect
+                                        }
+                                        return false;
+                                    });
+                                });
+                            </script>
+                            <input hidden class="uk-input kiemtrathuhang__input kiemtrathuhang__input--c1" type="text" placeholder="Tên HT muốn so sánh" value="">
                         </div>
                     </div>
                 </div>

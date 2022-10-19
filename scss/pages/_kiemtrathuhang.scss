@@ -22,6 +22,26 @@
       }
     }
   }
+  &__btnSelect{
+    border-radius: 8px;
+    letter-spacing: 0.3px;
+    color: rgba(15, 23, 42, 0.5);
+    font-size: 14px;
+    font-family: $font-Dosis-Regular;
+    text-transform: inherit;
+    padding-left: 10px;
+    position: relative;
+    text-align: left;
+    line-height: 34px;
+    .uk-icon{
+      right: 5px;
+    }
+    >span{
+      &:first-child{
+
+      }
+    }
+  }
   &__box1{
     &:before{
       content: attr(data-txt);

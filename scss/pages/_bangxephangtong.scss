@@ -32,6 +32,9 @@
         color: #0F172A;
         font-size: 13px;
         font-family: $font-Dosis-Regular;
+        &[rowspan]{
+          vertical-align: middle;
+        }
       }
       th{
         text-transform: inherit;
@@ -45,8 +48,9 @@
         white-space: nowrap;
         padding-top: 8px;
         padding-bottom: 8px;
+        border: 1px solid #DBDCE0;
         &:not(:first-child){
-          border-left: 1px solid #DBDCE0;
+          //border-left: 1px solid #DBDCE0;
         }
       }
     }
