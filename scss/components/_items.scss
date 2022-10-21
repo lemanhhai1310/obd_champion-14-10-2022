@@ -1,4 +1,10 @@
 .item{
+  $x:30;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+    }
+  }
   $x:24;
   &__#{$x}{
     &:nth-child(n+2){
@@ -6,6 +12,12 @@
     }
   }
   $x:20;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+    }
+  }
+  $x:16;
   &__#{$x}{
     &:nth-child(n+2){
       margin-top: #{$x}px;
