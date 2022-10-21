@@ -1631,6 +1631,11 @@ body:not(.uk-offcanvas-flip).uk-offcanvas-container-animation {
   font-family: "Dosis Regular", sans-serif;
   color: #0F172A;
 }
+.thele__offcanvas__body .uk-article > *[class*=uk-h] {
+  color: #0F172A !important;
+  font-family: "Dosis Bold", sans-serif;
+  margin-top: 0 !important;
+}
 .thele__offcanvas__close {
   right: 15px;
   width: 20px;
