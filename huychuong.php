@@ -77,7 +77,7 @@
                     </div>
                 </div>
                 <div class="item__15">
-                    <div class="uk-text-center huychuong__txt">Bạn cần <b>5</b> huy chương Vàng ở <strong>Đấu trường Sói</strong> để có cơ hội bốc quà BMW 320i. Cố lên nhé!</div>
+                    <div class="uk-text-center huychuong__txt">Bạn cần <b>5</b> huy chương Vàng ở <strong>Đấu trường Sói</strong> để có cơ hội bốc quà Box vàng. Cố lên nhé!</div>
                 </div>
             </div>
         </div>
