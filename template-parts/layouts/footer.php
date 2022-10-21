@@ -29,7 +29,7 @@
                     array(
                         'txt' => 'Tài khoản',
                         'icon' => 'taikhoan',
-                        'url' => '',
+                        'url' => 'profile.php',
                     ),
                 );
                 foreach ($data as $k=>$v): ?>
