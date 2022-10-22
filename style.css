@@ -1544,6 +1544,14 @@ body:not(.uk-offcanvas-flip).uk-offcanvas-container-animation {
   position: relative;
   padding-left: 15px !important;
 }
+.profile__nav .thele__nav__li:last-child .thele__nav__a {
+  color: #ED7D31 !important;
+  font-family: "Dosis SemiBold", sans-serif;
+}
+.thele__nav__a b {
+  font-family: "Dosis Bold", sans-serif;
+  color: #22C55E;
+}
 .thele__nav__a:before {
   content: "";
   position: absolute;
@@ -1556,6 +1564,9 @@ body:not(.uk-offcanvas-flip).uk-offcanvas-container-animation {
   background-position: center;
   background-repeat: no-repeat;
 }
+.profile__nav .thele__nav__a:before {
+  opacity: 0;
+}
 .thele__nav__a:after {
   content: "";
   left: 15px;
@@ -1563,6 +1574,9 @@ body:not(.uk-offcanvas-flip).uk-offcanvas-container-animation {
   bottom: 0;
   border-bottom: 1px solid #E2E8F0;
   position: absolute;
+}
+.profile__nav .thele__nav__li:last-child .thele__nav__a:after {
+  opacity: 0;
 }
 .thele__nav__icon {
   width: 36px;
