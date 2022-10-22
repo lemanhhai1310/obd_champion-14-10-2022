@@ -21,7 +21,7 @@
     <li class="thele__nav__li"><a class="thele__nav__a" href="#"><span class="uk-margin-small-right thele__nav__icon thele__nav__icon--c3" uk-icon="icon: trash"></span> Điểm kinh nghiệm ngày: 100</a></li>
     <li class="thele__nav__li"><a class="thele__nav__a" href="#"><span class="uk-margin-small-right thele__nav__icon thele__nav__icon--c4" uk-icon="icon: trash"></span> Thứ hạng ngày: 10</a></li>
     <li class="thele__nav__li">
-        <a class="thele__nav__a" href="#" uk-icon="icon: arrow-right">
+        <a class="thele__nav__a" href="login.php" uk-icon="icon: arrow-right">
             Đăng xuất
         </a>
     </li>
